@@ -1,0 +1,99 @@
+2026-01-01 11:12:07,190 [INFO] PaddleOCR Model Converter (ONNX only) - 2026-01-01 11:12:07.190513
+
+2026-01-01 11:12:07,190 [INFO] 
+============================================================
+Converting Detection Model
+============================================================
+2026-01-01 11:12:07,191 [INFO] Extracting ch_PP-OCRv4_det_infer.tar...
+2026-01-01 11:12:07,212 [INFO] Extracted to C:\Users\vess1\OneDrive\Desktop\MadPaddleToONNX\PP_OCR_models\ch_PP-OCRv4_det_infer
+2026-01-01 11:12:07,213 [INFO] Converting det.onnx to ONNX...
+2026-01-01 11:12:10,505 [INFO] ONNX model saved: C:\Users\vess1\OneDrive\Desktop\MadPaddleToONNX\output\det.onnx (4.51 MB)
+2026-01-01 11:12:10,505 [INFO] Validating det.onnx...
+2026-01-01 11:12:10,567 [INFO] [OK] det.onnx is valid
+2026-01-01 11:12:10,568 [INFO] Inputs:
+2026-01-01 11:12:10,568 [INFO]   x: tensor_type {
+  elem_type: 1
+  shape {
+    dim {
+      dim_param: "DynamicDimension.0"
+    }
+    dim {
+      dim_value: 3
+    }
+    dim {
+      dim_param: "DynamicDimension.1"
+    }
+    dim {
+      dim_param: "DynamicDimension.2"
+    }
+  }
+}
+
+2026-01-01 11:12:10,568 [INFO] Outputs:
+2026-01-01 11:12:10,569 [INFO]   sigmoid_0.tmp_0: tensor_type {
+  elem_type: 1
+  shape {
+    dim {
+      dim_param: "DynamicDimension.3"
+    }
+    dim {
+      dim_value: 1
+    }
+    dim {
+      dim_param: "DynamicDimension.4"
+    }
+    dim {
+      dim_param: "DynamicDimension.5"
+    }
+  }
+}
+
+2026-01-01 11:12:10,571 [INFO] 
+============================================================
+Converting Recognition Model
+============================================================
+2026-01-01 11:12:10,571 [INFO] Extracting ch_PP-OCRv4_rec_infer.tar...
+2026-01-01 11:12:10,613 [INFO] Extracted to C:\Users\vess1\OneDrive\Desktop\MadPaddleToONNX\PP_OCR_models\ch_PP-OCRv4_rec_infer
+2026-01-01 11:12:10,614 [INFO] Converting rec.onnx to ONNX...
+2026-01-01 11:12:13,988 [INFO] ONNX model saved: C:\Users\vess1\OneDrive\Desktop\MadPaddleToONNX\output\rec.onnx (10.31 MB)
+2026-01-01 11:12:13,989 [INFO] Validating rec.onnx...
+2026-01-01 11:12:14,044 [INFO] [OK] rec.onnx is valid
+2026-01-01 11:12:14,045 [INFO] Inputs:
+2026-01-01 11:12:14,046 [INFO]   x: tensor_type {
+  elem_type: 1
+  shape {
+    dim {
+      dim_param: "DynamicDimension.0"
+    }
+    dim {
+      dim_value: 3
+    }
+    dim {
+      dim_value: 48
+    }
+    dim {
+      dim_param: "DynamicDimension.1"
+    }
+  }
+}
+
+2026-01-01 11:12:14,046 [INFO] Outputs:
+2026-01-01 11:12:14,046 [INFO]   softmax_11.tmp_0: tensor_type {
+  elem_type: 1
+  shape {
+    dim {
+      dim_param: "DynamicDimension.2"
+    }
+    dim {
+      dim_param: "DynamicDimension.3"
+    }
+    dim {
+      dim_value: 6625
+    }
+  }
+}
+
+2026-01-01 11:12:14,049 [INFO] 
+Conversion complete!
+2026-01-01 11:12:14,050 [INFO] Output directory: C:\Users\vess1\OneDrive\Desktop\MadPaddleToONNX\output
+2026-01-01 11:12:14,050 [INFO] Validation log saved to: C:\Users\vess1\OneDrive\Desktop\MadPaddleToONNX\validation\onnx_validation.log
